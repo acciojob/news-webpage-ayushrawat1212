@@ -4,9 +4,142 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+
+	<style>
+    /* Body background color requirement */
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+	header.header {
+      background-color: #011e29;
+      color: #ffffff;
+		text-align: center;
+      padding: 20px;
+	}
+
+	header.header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+	/* Layout Container to hold sections side by side */
+    .container {
+      display: flex;
+      justify-content: center;
+		gap: 20px;
+		padding: 30px;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	/* Base card styling for sections */
+    .card {
+      background-color: #ffffff;
+		padding: 20px;
+		border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+	/* Latest News Section requirements */
+    .latest-news-section {
+      width: 25%;
+    }
+
+	.latest-news-section h3 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+	.latest-news-section ul {
+      padding-left: 20px;
+		
+    }
+
+	.latest-news-section li {
+      margin-bottom: 8px;
+    }
+
+		/* Main Article Section */
+    .main-article-section {
+      width: 40%;
+		text-align: center;
+    }
+
+	.main-article-section h2 {
+      margin-top: 0;
+    }
+
+		.main-article-section p {
+      line-height: 1.5;
+			color: #333;
+      text-align: justify;
+    }
+
+	/* Pictorial News Section requirements: .pictorial-news-section class, center aligned, background-color, padding, width, border-radius */
+    .pictorial-news-section {
+      width: 30%;
+      text-align: center;
+    }
+
+		.pictorial-news-section h3 {
+      margin-top: 0;
+    }
+
+	.pictorial-news-section img {
+      width: 100%;
+		max-width: 200px;
+		height: auto;
+		margin-bottom: 12px;
+		border-radius: 4px;
+    }
+		
+	</style>
 </head>
 
 <body>
+
+	<!-- Header -->
+  <header class="header">
+    <h1>Shaw's News</h1>
+  </header>
+
+	<!-- Main Content Layout -->
+  <div class="container">
+
+	  <!-- 1. Latest News Section -->
+    <div class="latest-news-section card">
+      <h3>Latest News Articles</h3>
+      <ul>
+        <li>Article 1</li>
+        <li>Article 2</li>
+        <li>Article 3</li>
+      </ul>
+    </div>
+
+	<!-- 2. Main Article Section -->
+    <div class="main-article-section card">
+      <h2>Main Article</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros. Sed malesuada, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros.
+      </p>
+    </div>
+
+    <!-- 3. Pictorial News Section -->
+    <div class="pictorial-news-section card">
+      <h3>Pictorial News</h3>
+      <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Pictorial News 1">
+      <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Pictorial News 2">
+      <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Pictorial News 3">
+    </div>
+
+  </div>
+	
+
+	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
